@@ -36,7 +36,7 @@ Ensure you have Python 3.9+ installed.
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/premprasad1707/Disease_prediction.git
 cd disease_project
 
 # Install dependencies
@@ -64,7 +64,7 @@ MediScan AI is designed to be plug-and-play. Place your datasets in `data/raw/` 
 | :--- | :--- | :--- | :--- |
 | **General** | `disease_dataset.csv` | Multi-class (15 Diseases) | ✅ Active |
 | **Clinical** | `heart.csv` | Binary (Heart Disease) | ✅ Active |
-| **Symptomatic** | `Disease_symptom_dataset.csv` | Binary (Patient Profile) | ✅ Active |
+| **Symptomatic** | `Disease_symptom_and_patient_profile_dataset.csv` | Binary (Patient Profile) | ✅ Active |
 | **Specialized** | Parkinson's, Diabetes, Kidney | Customizable | 🔄 Ready |
 
 ### Adding Custom Datasets
