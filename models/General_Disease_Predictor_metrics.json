@@ -1,0 +1,642 @@
+{
+  "display_name": "General Disease Predictor",
+  "safe_name": "General_Disease_Predictor",
+  "icon": "\ud83e\udda0",
+  "features": [
+    "fever",
+    "cough",
+    "fatigue",
+    "breathing_difficulty",
+    "headache",
+    "nausea",
+    "vomiting",
+    "diarrhea",
+    "chest_pain",
+    "joint_pain",
+    "muscle_pain",
+    "skin_rash",
+    "itching",
+    "weight_loss",
+    "loss_of_appetite",
+    "sweating",
+    "chills",
+    "abdominal_pain",
+    "back_pain",
+    "throat_pain",
+    "runny_nose",
+    "sneezing",
+    "yellow_skin",
+    "dark_urine",
+    "blurred_vision",
+    "increased_thirst",
+    "frequent_urination",
+    "swollen_lymph_nodes",
+    "stiff_neck",
+    "sensitivity_to_light",
+    "redness_of_eyes",
+    "burning_urination",
+    "irregular_heartbeat",
+    "ankle_swelling",
+    "coughing_blood",
+    "night_sweats",
+    "swollen_joints",
+    "high_fever",
+    "loss_of_balance",
+    "slurred_speech"
+  ],
+  "target": "disease",
+  "best_model": "XGBoost",
+  "accuracy": 0.975,
+  "roc_auc": 0.9997,
+  "confusion_matrix": [
+    [
+      13,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16
+    ]
+  ],
+  "feature_importance": {
+    "stiff_neck": 0.1160908192396164,
+    "yellow_skin": 0.08579882234334946,
+    "burning_urination": 0.08206093311309814,
+    "itching": 0.07305196672677994,
+    "irregular_heartbeat": 0.07109261304140091,
+    "increased_thirst": 0.06474814563989639,
+    "diarrhea": 0.06388060748577118,
+    "throat_pain": 0.05145183578133583,
+    "slurred_speech": 0.04936964809894562,
+    "night_sweats": 0.044142648577690125,
+    "breathing_difficulty": 0.022952677682042122,
+    "ankle_swelling": 0.020513465628027916,
+    "sensitivity_to_light": 0.019644657149910927,
+    "joint_pain": 0.01846887357532978,
+    "high_fever": 0.017950184643268585,
+    "dark_urine": 0.01741059683263302,
+    "muscle_pain": 0.016953662037849426,
+    "chills": 0.015631673857569695,
+    "loss_of_balance": 0.015135986730456352,
+    "cough": 0.01348101906478405,
+    "runny_nose": 0.013360555283725262,
+    "coughing_blood": 0.013335524126887321,
+    "back_pain": 0.012180407531559467,
+    "chest_pain": 0.011750675737857819,
+    "abdominal_pain": 0.00914605613797903,
+    "sweating": 0.008720031939446926,
+    "frequent_urination": 0.007921119220554829,
+    "loss_of_appetite": 0.007758609484881163,
+    "fever": 0.005966691765934229,
+    "skin_rash": 0.00540696457028389,
+    "vomiting": 0.004984295926988125,
+    "nausea": 0.004904299508780241,
+    "weight_loss": 0.004100515507161617,
+    "sneezing": 0.003679247573018074,
+    "headache": 0.0036605403292924166,
+    "blurred_vision": 0.0026104424614459276,
+    "fatigue": 0.0006831951905041933,
+    "swollen_lymph_nodes": 0.0,
+    "redness_of_eyes": 0.0,
+    "swollen_joints": 0.0
+  },
+  "feature_stats": {
+    "fever": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.4533333333333333,
+      "unique": 2
+    },
+    "cough": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2866666666666667,
+      "unique": 2
+    },
+    "fatigue": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.7008333333333333,
+      "unique": 2
+    },
+    "breathing_difficulty": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.15833333333333333,
+      "unique": 2
+    },
+    "headache": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.44583333333333336,
+      "unique": 2
+    },
+    "nausea": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.21833333333333332,
+      "unique": 2
+    },
+    "vomiting": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.16833333333333333,
+      "unique": 2
+    },
+    "diarrhea": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.041666666666666664,
+      "unique": 2
+    },
+    "chest_pain": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.145,
+      "unique": 2
+    },
+    "joint_pain": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.08583333333333333,
+      "unique": 2
+    },
+    "muscle_pain": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.13416666666666666,
+      "unique": 2
+    },
+    "skin_rash": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.11333333333333333,
+      "unique": 2
+    },
+    "itching": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.06416666666666666,
+      "unique": 2
+    },
+    "weight_loss": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.10416666666666667,
+      "unique": 2
+    },
+    "loss_of_appetite": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.17916666666666667,
+      "unique": 2
+    },
+    "sweating": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.13416666666666666,
+      "unique": 2
+    },
+    "chills": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1525,
+      "unique": 2
+    },
+    "abdominal_pain": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1575,
+      "unique": 2
+    },
+    "back_pain": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.049166666666666664,
+      "unique": 2
+    },
+    "throat_pain": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.065,
+      "unique": 2
+    },
+    "runny_nose": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.1025,
+      "unique": 2
+    },
+    "sneezing": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.09666666666666666,
+      "unique": 2
+    },
+    "yellow_skin": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.06666666666666667,
+      "unique": 2
+    },
+    "dark_urine": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.07166666666666667,
+      "unique": 2
+    },
+    "blurred_vision": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.08916666666666667,
+      "unique": 2
+    },
+    "increased_thirst": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.06833333333333333,
+      "unique": 2
+    },
+    "frequent_urination": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.12583333333333332,
+      "unique": 2
+    },
+    "swollen_lymph_nodes": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.008333333333333333,
+      "unique": 2
+    },
+    "stiff_neck": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.06666666666666667,
+      "unique": 2
+    },
+    "sensitivity_to_light": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.058333333333333334,
+      "unique": 2
+    },
+    "redness_of_eyes": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.005,
+      "unique": 2
+    },
+    "burning_urination": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.065,
+      "unique": 2
+    },
+    "irregular_heartbeat": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.056666666666666664,
+      "unique": 2
+    },
+    "ankle_swelling": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.05583333333333333,
+      "unique": 2
+    },
+    "coughing_blood": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.059166666666666666,
+      "unique": 2
+    },
+    "night_sweats": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.065,
+      "unique": 2
+    },
+    "swollen_joints": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.005,
+      "unique": 2
+    },
+    "high_fever": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.12083333333333333,
+      "unique": 2
+    },
+    "loss_of_balance": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.06333333333333334,
+      "unique": 2
+    },
+    "slurred_speech": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.06416666666666666,
+      "unique": 2
+    }
+  },
+  "all_results": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.9792,
+      "f1": 0.9792,
+      "roc_auc": 0.9998
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9792,
+      "f1": 0.9792,
+      "roc_auc": 0.9997
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.9667,
+      "f1": 0.9666,
+      "roc_auc": 0.9993
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.9708,
+      "f1": 0.9709,
+      "roc_auc": 0.9999
+    },
+    {
+      "model": "LightGBM",
+      "accuracy": 0.9542,
+      "f1": 0.9546,
+      "roc_auc": 0.9994
+    }
+  ],
+  "label_map": {
+    "0": "COVID-19",
+    "1": "Chickenpox",
+    "2": "Common Cold",
+    "3": "Dengue",
+    "4": "Diabetes",
+    "5": "Heart Disease",
+    "6": "Hepatitis",
+    "7": "Influenza",
+    "8": "Malaria",
+    "9": "Meningitis",
+    "10": "Pneumonia",
+    "11": "Stroke",
+    "12": "Tuberculosis",
+    "13": "Typhoid",
+    "14": "Urinary Tract Infection"
+  },
+  "is_multiclass": true
+}

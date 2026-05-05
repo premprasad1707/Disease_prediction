@@ -1,0 +1,166 @@
+{
+  "display_name": "Heart Disease",
+  "safe_name": "Heart_Disease",
+  "icon": "\u2764\ufe0f",
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "target": "target",
+  "best_model": "Random Forest",
+  "accuracy": 1.0,
+  "roc_auc": 1.0,
+  "confusion_matrix": [
+    [
+      100,
+      0
+    ],
+    [
+      0,
+      105
+    ]
+  ],
+  "feature_importance": {
+    "cp": 0.14479594915902225,
+    "thalach": 0.11809681107879867,
+    "ca": 0.11096501961943256,
+    "oldpeak": 0.10559049870637248,
+    "thal": 0.10182491916590826,
+    "age": 0.09182578093153854,
+    "chol": 0.07657856592498284,
+    "exang": 0.07418901050379093,
+    "trestbps": 0.0711776350786414,
+    "slope": 0.04523422043448793,
+    "sex": 0.029884733105253743,
+    "restecg": 0.01916647266939692,
+    "fbs": 0.010670383622373405
+  },
+  "feature_stats": {
+    "age": {
+      "min": 29.0,
+      "max": 77.0,
+      "mean": 54.43414634146342,
+      "unique": 41
+    },
+    "sex": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.6956097560975609,
+      "unique": 2
+    },
+    "cp": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.9424390243902439,
+      "unique": 4
+    },
+    "trestbps": {
+      "min": 94.0,
+      "max": 200.0,
+      "mean": 131.61170731707318,
+      "unique": 49
+    },
+    "chol": {
+      "min": 126.0,
+      "max": 564.0,
+      "mean": 246.0,
+      "unique": 152
+    },
+    "fbs": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.14926829268292682,
+      "unique": 2
+    },
+    "restecg": {
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 0.5297560975609756,
+      "unique": 3
+    },
+    "thalach": {
+      "min": 71.0,
+      "max": 202.0,
+      "mean": 149.11414634146342,
+      "unique": 91
+    },
+    "exang": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.33658536585365856,
+      "unique": 2
+    },
+    "oldpeak": {
+      "min": 0.0,
+      "max": 6.2,
+      "mean": 1.0715121951219515,
+      "unique": 40
+    },
+    "slope": {
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 1.3853658536585365,
+      "unique": 3
+    },
+    "ca": {
+      "min": 0.0,
+      "max": 4.0,
+      "mean": 0.7541463414634146,
+      "unique": 5
+    },
+    "thal": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 2.32390243902439,
+      "unique": 4
+    }
+  },
+  "all_results": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.8098,
+      "f1": 0.8072,
+      "roc_auc": 0.9298
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.9756,
+      "f1": 0.9756,
+      "roc_auc": 0.9876
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    {
+      "model": "LightGBM",
+      "accuracy": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    }
+  ],
+  "label_map": {
+    "0": "0",
+    "1": "1"
+  },
+  "is_multiclass": false
+}

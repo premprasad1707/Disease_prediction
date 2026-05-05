@@ -1,0 +1,126 @@
+{
+  "display_name": "Patient Profile & Symptoms",
+  "safe_name": "Patient_Profile_&_Symptoms",
+  "icon": "\ud83d\udccb",
+  "features": [
+    "Fever",
+    "Cough",
+    "Fatigue",
+    "Difficulty Breathing",
+    "Age",
+    "Gender",
+    "Blood Pressure",
+    "Cholesterol Level"
+  ],
+  "target": "Outcome Variable",
+  "best_model": "Random Forest",
+  "accuracy": 0.7429,
+  "roc_auc": 0.8628,
+  "confusion_matrix": [
+    [
+      24,
+      9
+    ],
+    [
+      9,
+      28
+    ]
+  ],
+  "feature_importance": {
+    "Age": 0.34992417515928576,
+    "Cholesterol Level": 0.15651185323490618,
+    "Gender": 0.10437029080695466,
+    "Fever": 0.09583320119789256,
+    "Blood Pressure": 0.08913473799625933,
+    "Cough": 0.08047996514403612,
+    "Fatigue": 0.0694846866452905,
+    "Difficulty Breathing": 0.054261089815374926
+  },
+  "feature_stats": {
+    "Fever": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.501432664756447,
+      "unique": 2
+    },
+    "Cough": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.4785100286532951,
+      "unique": 2
+    },
+    "Fatigue": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.6934097421203438,
+      "unique": 2
+    },
+    "Difficulty Breathing": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2521489971346705,
+      "unique": 2
+    },
+    "Age": {
+      "min": 19.0,
+      "max": 90.0,
+      "mean": 46.32378223495702,
+      "unique": 26
+    },
+    "Gender": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.49570200573065903,
+      "unique": 2
+    },
+    "Blood Pressure": {
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 0.9914040114613181,
+      "unique": 3
+    },
+    "Cholesterol Level": {
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 0.9512893982808023,
+      "unique": 3
+    }
+  },
+  "all_results": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.6429,
+      "f1": 0.6395,
+      "roc_auc": 0.6949
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.7571,
+      "f1": 0.7573,
+      "roc_auc": 0.855
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.6857,
+      "f1": 0.6857,
+      "roc_auc": 0.8079
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.7714,
+      "f1": 0.7716,
+      "roc_auc": 0.8022
+    },
+    {
+      "model": "LightGBM",
+      "accuracy": 0.7,
+      "f1": 0.7002,
+      "roc_auc": 0.7621
+    }
+  ],
+  "label_map": {
+    "0": "Negative",
+    "1": "Positive"
+  },
+  "is_multiclass": false
+}

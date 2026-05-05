@@ -1,0 +1,33 @@
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Conda
+anaconda_projects/
+
+# Byte-compiled / optimized files
+__pycache__/ 
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Databases
+*.db
+
+# IDE
+.vscode/
+.idea/
